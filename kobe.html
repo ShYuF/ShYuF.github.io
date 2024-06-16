@@ -5,11 +5,11 @@
         <title>Kobe</title>
         <link rel="stylesheet" type="text/css" href="./css/kobe.css">
         <base id = "base" href = ".">
+        <audio id = "music" src="./res/kobe/kobe.mp3" loop></audio>
     </head>
 
     <body>
-        <audio id = "music" src="./res/kobe/kobe.mp3" autoplay loop></audio>
-
+        <!-- 页面元素 -->
         <div class="ancester">
             <div class="body">
                 <img src="./res/kobe/p.png" alt="1" style="width:300%">
@@ -23,6 +23,11 @@
             <button id="btn" type="button" onclick="changeMusic()">换一首？</button>
         </div>
 
+        <!-- js部分 -->
+        <script>
+            var audio = document.getElementById("music");
+            audio.play();
+        </script>
 
         <script>
             function changeMusic() {
