@@ -7,9 +7,9 @@
         <base id = "base" href = ".">
     </head>
 
-    <body>
+    <body onload="autoplay()">
         <!-- 页面元素 -->
-        <audio id = "music" src="./res/kobe/see u again.ogg" loop></audio>
+        <audio id = "music" src="./res/kobe/kobe.mp3" loop></audio>
         <div class="ancester">
             <div class="body">
                 <img src="./res/kobe/p.png" alt="1" style="width:300%">
@@ -24,6 +24,12 @@
         </div>
 
         <!-- js部分 -->
+         <script>
+            function autoplay() {
+                var audio = document.getElementById("music");
+                audio.play();
+            }
+         </script>
         <script>
             function changeMusic() {
                 var base = document.getElementById("base").href;
@@ -37,10 +43,6 @@
                 }
                 audio.play();
             }
-        </script>
-
-        <script>
-            document.getElementById("btn").click();
         </script>
     </body>
 </html>
