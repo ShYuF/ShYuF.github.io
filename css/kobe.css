@@ -1,16 +1,17 @@
 .ancester {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 675px;
+    height: 675px;
+    object-fit: contain;
     margin-top: auto;
 }
 
 .body {
-    position: fixed;
+    position: absolute;
 }
 
 .head {
-    position: fixed;
+    position: absolute;
     animation: rotate 5s infinite linear; 
     transform-origin: 150% 25%;
 }
@@ -18,4 +19,13 @@
     0% { transform: rotate(0deg); }
     50% { transform: rotate(180deg); }
     100% { transform: rotate(360deg); }
+}
+
+.btn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
+    animation: bounce 1s infinite;
 }

@@ -4,6 +4,7 @@
     <head>
         <title>Kobe</title>
         <link rel="stylesheet" type="text/css" href="./css/kobe.css">
+        <base id = "base" href = ".">
     </head>
 
     <body>
@@ -17,15 +18,18 @@
                 <img src="./res/kobe/h.png" alt="1" style="width:300%">
             </div>
         </div>
-
+        
         <div class="btn">
-            <button type="button" onclick="changeMusic()">换一首？</button>
+            <button id="btn" type="button" onclick="changeMusic()">换一首？</button>
         </div>
+
 
         <script>
             function changeMusic() {
-                var audio = document.getElementsById("music");
-                if (audio.src == "./res/kobe/kobe.mp3") {
+                var base = document.getElementById("base").href;
+                var audio = document.getElementById("music");
+                
+                if (audio.src == base + "res/kobe/kobe.mp3") {
                     audio.src = "./res/kobe/see u again.ogg";
                 }
                 else {
