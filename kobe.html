@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <audio src="./res/kobe/kobe.mp3" autoplay loop></audio>
+        <audio id = "music" src="./res/kobe/kobe.mp3" autoplay loop></audio>
 
         <div class="ancester">
             <div class="body">
@@ -17,5 +17,22 @@
                 <img src="./res/kobe/h.png" alt="1" style="width:300%">
             </div>
         </div>
+
+        <div class="btn">
+            <button onclick="changeMusic()">换一首？</button>
+        </div>
+
+        <script>
+            function changeMusic() {
+                var audio = document.getElementsById("music");
+                if (audio.src == "./res/kobe/kobe.mp3") {
+                    audio.src = "./res/kobe/see u again.ogg";
+                }
+                else {
+                    audio.src = "./res/kobe/kobe.mp3";
+                }
+                audio.play();
+            }
+        </script>
     </body>
 </html>
