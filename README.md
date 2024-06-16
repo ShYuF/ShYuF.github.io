@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html>
   <head>
     <title>雨相羽的网站</title>
