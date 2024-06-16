@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0;url=./html/kobe.html" >
+<meta http-equiv="refresh" content="0;url=./kobe.html" >
