@@ -10,7 +10,7 @@
     <body>
         <!-- 页面元素 -->
         <audio id = "music" src="./res/kobe/kobe.mp3" loop autoplay></audio>
-        <div class="ancester">
+        <div class="ancester" id="kobe">
             <div class="body">
                 <img src="./res/kobe/p.png" alt="1" style="width:300%">
             </div>
@@ -19,8 +19,8 @@
             </div>
         </div>
         
-        <div class="btn">
-            <button type="button" onclick="changeMusic()">换一首？</button>
+        <div class="btn" id="buttons">
+            <button type="button" onclick="changeMusic()">换一首</button>
         </div>
 
         <!-- js部分 -->
@@ -37,6 +37,31 @@
                 }
                 audio.play();
             }
+        </script>
+
+        <script>
+            function create() {
+                var new_btn = document.createElement("button");
+                new_btn.innerHTML = "暂停";
+                new_btn.type = "button";
+                new_btn.onclick = function() {
+                    var audio = document.getElementById("music");
+                    if (audio.paused) {
+                        audio.play();
+                        new_btn.innerHTML = "暂停";
+                    }
+                    else {
+                        audio.pause();
+                        new_btn.innerHTML = "播放";
+                    }
+                }
+                var button_class = document.getElementById("buttons");
+                button_class.appendChild(new_btn);
+            }
+        </script>
+
+        <script>
+            create();
         </script>
     </body>
 </html>
