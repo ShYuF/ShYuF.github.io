@@ -2,16 +2,11 @@
   <head>
   </head>
 
-  <body>
-    <div class="lists" id="lists">
-      <button type="button" onclick="kobe()">好康的</button>
-    </div>
+  <body lang="zh-CN">
+    <a href="/kobe">
+      <button type="button">好康的</button>
+    </a>
 
-    <script>
-      function kobe() {
-        windows.location.href = "https://shyuf.github.io/kobe.html";
-        // <meta http-equiv="refresh" content="0;url=./kobe.html" >
-      }
-    </script>
+    <!-- <meta http-equiv="refresh" content="0;url=./kobe.html" > -->
   </body>
 </html>
