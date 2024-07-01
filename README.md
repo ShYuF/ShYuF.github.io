@@ -9,7 +9,7 @@
 
     <script>
       function kobe() {
-        windows.location.href = "./kobe.html";
+        windows.location.href = "https://shyuf.github.io/kobe.html";
         // <meta http-equiv="refresh" content="0;url=./kobe.html" >
       }
     </script>
