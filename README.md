@@ -1,6 +1,5 @@
 <html>
   <head>
-    <title>雨相羽</title>
   </head>
 
   <body>
