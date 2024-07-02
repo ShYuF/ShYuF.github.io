@@ -1,5 +1,5 @@
-const maxInit = 280 - 30;
-const maxUsage = 1919810;
+const maxInit = 1919810;
+const maxUsage = 280 - 30;
 var time = 0;
 
 
@@ -43,7 +43,7 @@ function updTime() {
 }
 
 function setUsage() {
-    var usage = Math.random() * maxInit;
+    var usage = Math.random() * maxUsage;
     document.getElementById("usage").style.width = usage + "px";
     document.getElementById("usage_text").innerHTML = (usage / 268.0 * 125).toFixed(2) + "GB";
 }
