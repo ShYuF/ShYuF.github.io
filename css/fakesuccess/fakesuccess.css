@@ -1,0 +1,413 @@
+/* 页面设置 */
+.page_bg {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background: url(../../res/fakesuccess/bg.png) no-repeat top right;
+    background-color: #e6e6e6;
+    font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
+}
+
+/* 页面布局设置 */
+.container {
+    width: 640px;
+    height: 480px;
+
+    position: relative;
+    margin: auto;
+    padding: 0;
+    border: 0;
+
+    background: url(../../res/fakesuccess/shadow.png) no-repeat 48px 344px;
+}
+
+/* 背景框（整体） */
+.greet {
+    width: 512px;
+    height: 224px;
+
+    top: 64px;
+    left: 48px;
+    position: absolute;
+    background: rgb(147, 39, 143) url(../../res/fakesuccess/greeting.png) no-repeat 30px 46px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 背景框下三角 */
+.greet_triangle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 288px;
+    left: 80px;
+
+    border-right: 48px solid transparent;
+    border-top: 48px solid rgb(147, 39, 143);
+    border-left: 0 solid transparent;
+    border-bottom: 0 solid rgb(147, 39, 143);
+}
+
+/* 信息框 */
+.info {
+    width: 352px;
+    height: 208px;
+
+    top: 96px;
+    left: 176px;
+    padding: 32px;
+    position: absolute;
+
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 用户名 */
+.username {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    color: rgb(147, 39, 143);
+    font-size: 34px;
+    font-weight: lighter;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 自服务 */
+.account {
+    float: left;
+    margin-top: 8px;
+    margin-left: 16px;
+    padding-left: 40px;
+
+    background: url(../../res/fakesuccess/account.gif) no-repeat 0 0;
+    background-position: 2px 4px;
+    line-height: 1.1;
+    font-size: 13px;
+    color: rgb(118, 56, 128);
+    text-decoration: none;
+}
+
+/* 自服务（英） */
+.text_en {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    line-height: 1.1;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* 账户内容 */
+.content {
+    float: left;
+    margin: 0;
+    margin-top: -8px;
+    padding: 0;
+    border: 0;
+    ;
+}
+
+.label_text {
+    width: 56px;
+    height: 32px;
+
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: 22px;
+
+    text-align: right;
+    font-size: 13px;
+}
+
+/* 账户内容（英） */
+.label_text_en {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    color: rgb(48, 48, 48);
+    text-align: right;
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* 用时 */
+.time {
+    height: 28px;
+
+    float: left;
+    margin: 0;
+    margin-top: 24px;
+    margin-left: 20px;
+    padding-top: 4px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: lighter;
+    color: rgb(236, 102, 119);
+}
+
+.unit {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-left: 8px;
+
+    color: rgb(92, 92, 92);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* 流量条 */
+.bar {
+    width: 280px;
+    height: 32px;
+
+    float: left;
+    position: relative;
+    margin: 24px 0 0 16px;
+    padding: 0;
+
+    background: url(../../res/fakesuccess/usage.gif) repeat-y;
+}
+
+/* 流量条刻度 */
+.calibration {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    top: -16px;
+    right: 14px;
+
+    list-style: none;
+    color: rgb(150, 150, 150);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+}
+
+li {
+    float: right;
+    width: 53px;
+    text-align: right;
+}
+
+/* 已使用 */
+.usage {
+    max-width: 280px;
+    height: 32px;
+
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background: rgb(188, 155, 204);
+}
+
+/* 条纹 */
+.stripe {
+    width: 4px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 4px;
+
+    background-color: rgb(242, 242, 242);
+}
+
+/* 已使用数据 */
+.usage_text {
+    height: 28px;
+
+    float: none;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* 退出登录容器 */
+.button_container {
+    width: 208px;
+    height: 80px;
+
+    position: absolute;
+    top: 304px;
+    right: 32px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* 背景框下三角 */
+.button_triangle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 288px;
+    left: 592px;
+
+    border-right: 16px solid transparent;
+    border-top: 0 solid rgb(204, 204, 204);
+    border-left: 0 solid transparent;
+    border-bottom: 16px solid rgb(204, 204, 204);
+}
+
+/* 退出登录按钮 */
+.disconnect {
+    width: 174px;
+    height: 46px;
+
+    margin: 16px;
+    border: rgb(178, 170, 190) solid 1px;
+
+    background: rgb(192, 189, 204) url(../../res/fakesuccess/disconnect.png) no-repeat center 0;
+    overflow: hidden;
+}
+
+.disconnect:hover {
+    background: rgb(213, 209, 223) url(../../res/fakesuccess/disconnect.png) no-repeat center -47px;
+}
+
+.disconnect:active {
+    background: rgb(177, 170, 195) url(../../res/fakesuccess/disconnect.png) no-repeat center -94px;
+}
+
+.disconnect:disabled {
+    background: rgb(204, 204, 204) url(../../res/fakesuccess/disconnect.png) no-repeat center -141px;    
+}
+
+/* 友链 */
+.links {
+    width: 234px;
+
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li[name="link"] {
+    width: auto;
+
+    display: block;
+    float: left;
+    margin: 0;
+    margin-right: 12px;
+    padding: 0;
+    border: 0;
+
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+}
+
+li[name="linkr"] {
+    width: auto;
+
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+}
+
+.link_info {
+    height: 16px;
+
+    display: block;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 26px;
+    margin: 0;
+    border: 0;
+
+    color: rgb(118, 56, 128);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../../res/fakesuccess/popup_info.gif) no-repeat 2px 2px;
+}
+
+.link_lib {
+    height: 16px;
+
+    display: block;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 26px;
+    margin: 0;
+    border: 0;
+
+
+    color: rgb(118, 56, 128);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../../res/fakesuccess/popup_lib.gif) no-repeat 2px 2px;
+}
+
+.link_learn {
+    height: 16px;
+    
+    display: block;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 26px;
+    margin: 0;
+    border: 0;
+
+    color: rgb(118, 56, 128);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../../res/fakesuccess/popup_learn.gif) no-repeat 2px 2px;
+}
+
+.link_mail {
+    height: 16px;
+    
+    display: block;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 26px;
+    margin: 0;
+    border: 0;
+
+    color: rgb(118, 56, 128);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../../res/fakesuccess/popup_mail.gif) no-repeat 2px 2px;
+}

@@ -1,0 +1,323 @@
+/* 页面设置 */
+.page_bg {
+    background-color: rgb(230, 230, 230);
+    font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
+}
+
+/* 页面布局设置 */
+.container {
+    width: 800px;
+    height: 100%;
+
+    margin: auto;
+}
+
+/* 页面logo设置 */
+.header {
+    height: fit-content;
+    width: fit-content;
+
+    float: left;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+/* 二维码 */
+.qr_code {
+    height: 200px;
+    width: 200px;
+
+    float: right;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: -50px;
+
+    font-size: 12px;
+    text-align: center;
+    color: rgb(120, 120, 120);
+}
+
+/* 主体框 */
+.content {
+    width: 100%;
+    height: 480px;
+
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+/* 登录背景框（整体） */
+.greet {
+    width: 720px;
+    height: 300px;
+
+    float: left;
+    margin-left: 20px;
+    position: absolute;
+
+    background-color: rgb(230, 78, 46);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+/* 整体背景框下三角*/
+.greet_triangle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 300px;
+    left: 50px;
+
+    border-right: 48px solid transparent;
+    border-top: 48px solid rgb(230, 78, 46);
+    border-left: 0 solid transparent;
+    border-bottom: 0 solid rgb(230, 78, 46);
+}
+
+/* 你好,hi图像 */
+.hello {
+    width:fit-content;
+    height: fit-content;
+
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* 通知栏容器 */
+.notice_container {
+    width: 320px;
+    height: 160px;
+
+    top: 140px;
+    left: 0px;
+    position: absolute;
+
+    background-color: rgb(230, 86, 46);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 通知栏左上三角 */
+.notice_triangle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: -20px;
+    left: 0;
+
+    border-right: 20px solid rgb(230, 78, 46);
+    border-top: 20px solid transparent;
+    border-left: 0 solid rgb(230, 78, 46);
+    border-bottom: 0 solid transparent;
+}
+
+/* 通知栏图像 */
+.notice_img {
+    width: fit-content;
+    height: fit-content;
+
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+/* 通知栏内容 */
+.notice {
+    width: 300px;
+    height: 92px;
+
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+
+    background-color: rgb(230, 86, 46);
+    font-size: 14px;
+}
+
+/* 登录背景框 */
+.login {
+    width: 470px;
+    height: 300px;
+
+    margin-top: 35px;
+    margin-left: 320px;
+    margin-right: 0;
+    position: absolute;
+
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 登录背景框下三角 */
+.login_triangle {
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 300px;
+    left: 390px;
+
+    border-right: 48px solid transparent;
+    border-top: 48px solid rgb(240, 240, 240);
+    border-left: 0 solid transparent;
+    border-bottom: 0 solid rgb(240, 240, 240);
+}
+
+/* 登录表单 */
+.login_form {
+    margin: 32px;
+
+    float: left;
+}
+
+/* 登录说明标签 */
+.login_label {
+    width: 100%;
+
+    float: left;
+    margin-bottom: 16px;
+}
+
+/* 登录说明文字 */
+.login_text {
+    height: 48px;
+    width: 100px;
+
+    float: left;
+    padding: 0;
+    margin: 0px;
+
+    font-size: 20px;
+    text-align: left;
+}
+
+/* 登录说明文字（英文） */
+.login_text_en {
+    padding: 0;
+    margin: 0;
+
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* 登录输入框 */
+.login_input {
+    width: 298px;
+    height: 42px;
+
+    float: right;
+    padding: 2px;
+    
+    background-color: rgb(255, 255, 255);
+    border: rgb(230, 230, 230) 1px solid;
+    font-size: 34px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 重写默认输入框样式 */
+input {
+    width: auto;
+    height: auto;
+    max-width: 296px;
+
+    border: none;
+    outline: none;
+
+    background-color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* 账号提示框 */
+.login_account {
+    float: right;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+
+    background: url(../../res/fakemain/account.gif) no-repeat 0 0;
+    font-size: 13px;
+    color: rgb(140, 140, 140);
+    padding-left: 40px;
+}
+
+.account_text_en {
+    margin-top: 0;
+
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* 访问校外网络标签 */
+.internet {
+    height: 32px;
+    width: fit-content;
+
+    position: relative;
+    float: left;
+    margin-left: 46px;
+    margin-bottom: 30px;
+}
+
+/* 访问校外网络文字 */
+.internet_text {
+    height: 32px;
+    width: fit-content;
+
+    float: right;
+    padding: 0;
+    margin: 0px;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(231, 86, 46);
+}
+
+/* 访问校外网络文字（英文） */
+.internet_text_en {
+    padding: 0;
+    margin: 0px;
+
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* 登录按钮 */
+.login_button {
+    width: 100%;
+    height: 46px;
+
+    position: relative;
+    margin-bottom: 10px;
+
+    border: rgb(156, 178, 46) solid 1px;
+    background: rgb(192, 206, 85) url(../../res/fakemain/connect.png) no-repeat center 0;
+}
+
+.login_button:hover {
+    background: rgb(210, 224, 66) url(../../res/fakemain/connect.png) no-repeat center -47px;
+}
+
+.login_button:active {
+    background: rgb(170, 195, 11) url(../../res/fakemain/connect.png) no-repeat center -94px;
+}
+
+.login_button:disabled {
+    background: rgb(203, 206, 182) url(../../res/fakemain/connect.png) no-repeat center -141px;
+}
+
+/* 登录按钮 */
+input[type="submit"] {
+    max-width: 500px;
+    cursor: pointer;
+}

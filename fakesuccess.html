@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>清华大学校园网(IPV4) Tsinghua University Network(仿)</title>
+        <link rel="stylesheet" type="text/css" href="css/fakesuccess/fakesuccess.css" />
+        <script src="js/fakesuccess/fakesuccess.js"></script>
+    </head>
+
+    <body class="page_bg">
+        <div class="container">
+            <div class="greet"></div>
+            <div class="greet_triangle"></div>
+            <div class="info">
+                <h1 class="username" id="name">
+                    NoName
+                </h1>
+                <!-- <a href="https://usereg.tsinghua.edu.cn"> -->
+                <a href="fakemain.html" target="_blank" title="自服务" class="account">
+                    自服务
+                    <p class="text_en">Account Settings</p>
+                </a>
+                <div class="content">
+                    <!-- 连接时间 -->
+                    <div class="label_text">
+                        已连接
+                        <p class="label_text_en">Duration</p>
+                    </div>
+                    <div class="time">
+                        <span id="clock">00:00:00</span>
+                        <span class="unit"></span>
+                    </div>
+
+                    <!-- 流量 -->
+                    <div class="label_text">
+                        已用流量(IPv4)
+                        <p class="label_text_en">Usage</p>
+                    </div>
+                    <div class="bar">
+                        <ul class="calibration">
+                            <li>125</li>
+                            <li>100</li>
+                            <li>75</li>
+                            <li>50</li>
+                        </ul>
+                        <!-- 已用流量 -->
+                        <div class="usage" id="usage"></div>
+                        <!-- 条纹？ -->
+                        <div class="stripe"></div>
+                        <div class="stripe" style="right: 12px;"></div>
+                        <div class="usage_text">
+                            <span class="unit" id="usage_text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button_triangle"></div>
+            <div class="button_container">
+                <form id="disconnect" action="fakemain.html" method="post">
+                    <button class="disconnect" type="submit" value=""></button>
+            </div>
+            <ul class="links">
+                <li name="link">
+                    <a class="link_info" href="http://info.tsinghua.edu.cn" target="_new" title="清华信息门户info.tsinghua">Info</a>
+                </li>
+                <li name="link">
+                    <a class="link_lib" href="http://lib.tsinghua.edu.cn/" target="_new" title="清华图书馆lib.tsinghua">Lib</a>
+                </li>
+                <li name="link">
+                    <a class="link_learn" href="http://learn.tsinghua.edu.cn" target="_new" title="清华网络学堂learn.tsinghua">Learn</a>
+                </li>
+                <li name="linkr">
+                    <a class="link_mail" href="http://mail.tsinghua.edu.cn" target="_new" title="清华邮箱mail.tsinghua">Mail</a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            init();
+        </script>
+    </body>
+</html>

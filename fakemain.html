@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>清华大学校园网(IPV4) Tsinghua University Network(仿)</title>
+        <link rel="stylesheet" type="text/css" href="css/fakemain/fakemain.css">
+        <script src="js/fakemain/fakemain.js"></script>
+    </head>
+
+    <body class="page_bg">
+        <div class="container">
+            <!-- logo -->
+            <div class="header">
+                <a href="">
+                    <img src="res/fakemain/tsinghua.png" alt="清华大学校园网" width="80%">
+                </a>
+            </div>
+            <!-- 信息服务二维码 -->
+            <div class="qr_code">
+                <img src="res/fakemain/qrcode.jpg" alt="欢迎关注&quot清华大学信息服务&quot" width="50%">
+                <p>欢迎关注&quot清华大学信息服务&quot</p>
+            </div>
+
+            <!-- 登录 -->
+            <div class="content">
+                <div class="greet">
+                    <img class="hello" src="res/fakemain/greeting.png" alt=";)你好,Hi," width="35%">
+                </div>
+
+                <div class="greet_triangle"></div>
+                
+                <div class="notice_container">
+                    <div class="notice_triangle"></div>
+                    <img class="notice_img" src="res/fakemain/notice.png" alt="通知" width="35%">
+                    <p class="notice">
+                    </p>
+                </div>
+
+                <div class="login">
+                    <form id="login_form" action="fakesuccess.html" method="post" class="login_form">
+                        <input type="hidden" name="action" value="login">
+                        <label class="login_label">
+                            <p class="login_text">
+                                用户名</br>
+                                <span class="login_text_en">User ID</span>
+                            </p>
+                            <div class="login_input">
+                                <input type="text" name="username" value="" autocorrect="off" autocapitalize="none" onfocus="clearAccount()">
+                            </div>
+                            <div class="login_account" id="account">
+                                校园网账户</br>
+                                <p class="account_text_en">Account of Tsinghua Universty Network</p>
+                            </div>
+                        </label>
+                        
+                        <label class="login_label">
+                            <p class="login_text">
+                                密码</br>
+                                <span class="login_text_en">Password</span>
+                            </p>
+                            <div class="login_input">
+                                <input type="password" name="password" value="" autocorrect="off" autocapitalize="none">
+                            </div>
+                        </label>
+
+                        <label class="internet">
+                            <input type="checkbox" name="internet" value="1" checked="">
+                            <p class="internet_text">
+                                访问校外网络</br>
+                                <span class="internet_text_en">Access to the Internet</span>
+                            </p>
+                        </label>
+
+                        <input type="submit" class="login_button" value="" onclick="cannotLogin()">
+                    <div class="login_triangle"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
