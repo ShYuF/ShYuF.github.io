@@ -20,6 +20,12 @@ function init() {
     var timeStr = hour + ":" + min + ":" + sec;
     document.getElementById("clock").innerHTML = timeStr;
 
+    // 解析用户名并修改
+    var href = window.location.href;
+    var regex = new RegExp(".*\?username=(.*)&password=.*");
+    var results = regex.exec(href);
+    document.getElementById("name").innerHTML = decodeURIComponent(results[1]);
+
     setInterval(updTime, 1000);
     setUsage();
 }

@@ -3,6 +3,7 @@
     <head>
         <title>清华大学校园网(IPV4) Tsinghua University Network(仿)</title>
         <link rel="stylesheet" type="text/css" href="css/fakemain/fakemain.css">
+        <link rel="stylesheet" type="text/css" href="css/fakemain/fakemain2.css">
         <script src="js/fakemain/fakemain.js"></script>
     </head>
 
@@ -14,14 +15,15 @@
                     <img src="res/fakemain/tsinghua.png" alt="清华大学校园网" width="80%">
                 </a>
             </div>
+
             <!-- 信息服务二维码 -->
             <div class="qr_code">
                 <img src="res/fakemain/qrcode.jpg" alt="欢迎关注&quot清华大学信息服务&quot" width="50%">
                 <p>欢迎关注&quot清华大学信息服务&quot</p>
             </div>
 
-            <!-- 登录 -->
             <div class="content">
+                <!-- 登录 -->
                 <div class="greet">
                     <img class="hello" src="res/fakemain/greeting.png" alt=";)你好,Hi," width="35%">
                 </div>
@@ -32,19 +34,19 @@
                     <div class="notice_triangle"></div>
                     <img class="notice_img" src="res/fakemain/notice.png" alt="通知" width="35%">
                     <p class="notice">
+                        这是通知
                     </p>
                 </div>
 
                 <div class="login">
-                    <form id="login_form" action="fakesuccess.html" method="post" class="login_form">
-                        <input type="hidden" name="action" value="login">
+                    <form id="login_form" class="login_form">
                         <label class="login_label">
                             <p class="login_text">
                                 用户名</br>
                                 <span class="login_text_en">User ID</span>
                             </p>
                             <div class="login_input">
-                                <input type="text" name="username" value="" autocorrect="off" autocapitalize="none" onfocus="clearAccount()">
+                                <input type="text" id="user" name="username" value="" autocorrect="off" autocapitalize="none" onfocus="clearAccount()">
                             </div>
                             <div class="login_account" id="account">
                                 校园网账户</br>
@@ -58,7 +60,7 @@
                                 <span class="login_text_en">Password</span>
                             </p>
                             <div class="login_input">
-                                <input type="password" name="password" value="" autocorrect="off" autocapitalize="none">
+                                <input type="password" id="pwd" name="password" value="" autocorrect="off" autocapitalize="none">
                             </div>
                         </label>
 
@@ -70,10 +72,57 @@
                             </p>
                         </label>
 
-                        <input type="submit" class="login_button" value="" onclick="cannotLogin()">
+                        <input type="submit" class="login_button" value="">
+                    </form>
                     <div class="login_triangle"></div>
                 </div>
+
+                <!-- 下载部分 -->
+                <!-- 怎么这么多都是无效链接 -->
+                <div class="download">
+                    <ul class="system">
+                        <li>
+                            <a id="sys" class="windows" href="#" title="Windows">Windows</a>
+                        </li>
+                        <li>
+                            <a id="sys" class="mac" href="#" title="MacOS">MacOS</a>
+                        </li>
+                        <li>
+                            <a id="sys" class="linux" href="res/fakemain/Tunet_linuxZRRZ.zip" title="Linux">Linux</a>
+                        </li>
+                        <li>
+                            <a id="sys" class="android" href="#" title="Android">Android</a>
+                        </li>
+                        <li>
+                            <a id="sys" class="ios" href="#" title="iOS">iOS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 下载框右侧 -->
+                <ul class="widget">
+                    <li id="wgt" class="bookmark">
+                        <a id="wgt" href="#" title="收藏 Bookmark This Page">收藏<br>Bookmark This Page</a>
+                    </li>
+                    <li id="wgt" class="help">
+                        <a id="wgt" href="#" title="帮助 Help">帮助<br>Help</a>
+                    </li>
+                    <li id="wgt" class="contact">
+                        <p id="contact">联系<br>Contact</p>
+                        <div id="contact">
+                            +86-10-62784859<br>
+                            <a id="wgt" href="#" title="联系">its@tsinghua.edu.cn</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
+
+            <!-- 页脚 -->
+            <div class="foot">
+                清华大学信息化技术中心<br>Information Technology Center of Tsinghua University
+            </div>
+
+            <script>init();</script>
         </div>
     </body>
 

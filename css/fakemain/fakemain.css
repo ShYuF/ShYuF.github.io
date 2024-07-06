@@ -1,6 +1,6 @@
 /* 页面设置 */
 .page_bg {
-    background-color: rgb(230, 230, 230);
+    background: rgb(230, 230, 230) url(../../res/fakemain/background.png) repeat-x top;
     font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
 }
 
@@ -45,6 +45,8 @@
     position: relative;
     float: left;
     clear: both;
+
+    background: url(../../res/fakemain/content_shadow.png) no-repeat 0 400px;
 }
 
 /* 登录背景框（整体） */
@@ -90,7 +92,7 @@
     height: 160px;
 
     top: 140px;
-    left: 0px;
+    left: -5px;
     position: absolute;
 
     background-color: rgb(230, 86, 46);
@@ -103,11 +105,11 @@
     height: 0;
 
     position: absolute;
-    top: -20px;
+    top: -25px;
     left: 0;
 
-    border-right: 20px solid rgb(230, 78, 46);
-    border-top: 20px solid transparent;
+    border-right: 26px solid rgb(230, 78, 46);
+    border-top: 26px solid transparent;
     border-left: 0 solid rgb(230, 78, 46);
     border-bottom: 0 solid transparent;
 }
@@ -137,6 +139,7 @@
     border: 0;
 
     background-color: rgb(230, 86, 46);
+    color: white;
     font-size: 14px;
 }
 
