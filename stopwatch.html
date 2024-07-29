@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>秒表</title>
+        <link rel="stylesheet" href="css/clock/clock.css">
+        <link rel="stylesheet" href="css/clock/stopwatch.css">
+        <script src="js/clock/stopwatch.js"></script>
+    </head>
+
+    <body>
+        <div class="container" id="stopwatchContainer">
+            <div class="clock" id="clock">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 表盘背景 -->
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="2"/>
+                    
+                    <!-- 刻度 -->
+                    <g transform="translate(100, 100)">
+                        <!-- 表盘外圈 -->
+                        <circle r="90" fill="none" stroke="gray" stroke-width="0.5" />
+                        <!-- 每个小时的刻度，动态生成 -->
+                        <g id="hourTicks" stroke="black" stroke-width="2.5"></g>
+                        <!-- 每分钟的刻度，动态生成 -->
+                        <g id="minuteTicks" stroke="black" stroke-width="2"></g>
+                    </g>
+                    
+                    <!-- 分、时、秒针，中心圆点 -->
+                    <line x1="100" y1="110" x2="100" y2="50" stroke="black" stroke-width="6" transform="rotate(0)" id="hourHand"/>
+                    <line x1="100" y1="115" x2="100" y2="35" stroke="gray" stroke-width="3.5" transform="rotate(0)" id="minuteHand"/>
+                    <line x1="100" y1="120" x2="100" y2="25" stroke="red" stroke-width="2.5" transform="rotate(0)" id="secondHand"/>
+                    <circle cx="100" cy="100" r="4.5" fill="rgba(70, 70, 70, 0.9)" />
+                </svg>
+            </div>
+            
+
+            <div class="time" id="digitalClock"></div>
+            <div class="stopwatch-controls">
+                <button id="start-btn">开始</button>
+                <button id="pause-btn" disabled="true">暂停</button>
+                <button id="record-btn" disabled="true">记录</button>
+                <button id="reset-btn" disabled="true">重置</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="container" id="countContainer">
+            <ul class="watchList" id="watchList"></ul>
+        </div>
+        <div class="functionButtons" id="swPage">
+            <button id="clock-btn">时钟/闹钟</button>
+            <button id="stopwatch-btn" disabled="true">秒表</button>
+            <button id="timer-btn">计时</button>
+        </div>
+    </body>
+
+    <script>
+        initStopwatch();
+    </script>
+</html>

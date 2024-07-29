@@ -8,13 +8,13 @@
     </head>
 
     <body lang="zh-CN">
-        <audio id = "music" src="./res/kobe/kobe.mp3" loop autoplay></audio>
+        <audio id = "music" src="./res/audio/kobe.mp3" loop autoplay></audio>
         <div class="ancester" id="kobe">
             <div class="body">
-                <img src="./res/kobe/p.png" alt="1" style="width:300%">
+                <img src="./res/image/p.png" alt="1" style="width:300%">
             </div>
             <div class="head">
-                <img src="./res/kobe/h.png" alt="1" style="width:300%">
+                <img src="./res/image/h.png" alt="1" style="width:300%">
             </div>
         </div>
         
@@ -27,11 +27,11 @@
                 var base = document.getElementById("base").href;
                 var audio = document.getElementById("music");
                 
-                if (audio.src == base + "res/kobe/kobe.mp3") {
-                    audio.src = base + "res/kobe/see u again.ogg";
+                if (audio.src == base + "res/audio/kobe.mp3") {
+                    audio.src = base + "res/audio/see u again.ogg";
                 }
                 else {
-                    audio.src = base + "res/kobe/kobe.mp3";
+                    audio.src = base + "res/audio/kobe.mp3";
                 }
                 audio.play();
             }

@@ -7,7 +7,7 @@
     bottom: 0;
     left: 0;
 
-    background: url(../../res/fakemain/download.png) no-repeat 0 8px;
+    background: url(../../res/image/download.png) no-repeat 0 8px;
 }
 
 ul {
@@ -48,31 +48,31 @@ a[id="sys"] {
 .windows {
     left: 16px;
 
-    background: url(../../res/fakemain/windows.gif) no-repeat 2px 0;
+    background: url(../../res/image/windows.gif) no-repeat 2px 0;
 }
 
 .mac {
     left: 80px;
 
-    background: url(../../res/fakemain/mac.gif) no-repeat 0 0;
+    background: url(../../res/image/mac.gif) no-repeat 0 0;
 }
 
 .linux {
     left: 144px;
 
-    background: url(../../res/fakemain/linux.gif) no-repeat 0 0;
+    background: url(../../res/image/linux.gif) no-repeat 0 0;
 }
 
 .android {
     left: 206px;
 
-    background: url(../../res/fakemain/android.gif) no-repeat 0 0;
+    background: url(../../res/image/android.gif) no-repeat 0 0;
 }
 
 .ios {
     left: 270px;
 
-    background: url(../../res/fakemain/ios.gif) no-repeat 0 0;
+    background: url(../../res/image/ios.gif) no-repeat 0 0;
 }
 
 .widget {
@@ -102,15 +102,15 @@ a[id="wgt"] {
 }
 
 .bookmark {
-    background: url(../../res/fakemain/bookmark.gif) no-repeat 8px 0;
+    background: url(../../res/image/bookmark.gif) no-repeat 8px 0;
 }
 
 .help {
-    background: url(../../res/fakemain/help.gif) no-repeat 4px 0;
+    background: url(../../res/image/help.gif) no-repeat 4px 0;
 }
 
 .contact {
-    background: url(../../res/fakemain/contact.gif) no-repeat 4px 0;
+    background: url(../../res/image/contact.gif) no-repeat 4px 0;
 }
 
 p[id="contact"] {

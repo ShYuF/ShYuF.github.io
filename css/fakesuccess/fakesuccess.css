@@ -4,7 +4,7 @@
     padding: 0;
     border: 0;
 
-    background: url(../../res/fakesuccess/bg.png) no-repeat top right;
+    background: url(../../res/image/bg.png) no-repeat top right;
     background-color: #e6e6e6;
     font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
 }
@@ -19,7 +19,7 @@
     padding: 0;
     border: 0;
 
-    background: url(../../res/fakesuccess/shadow.png) no-repeat 48px 344px;
+    background: url(../../res/image/shadow.png) no-repeat 48px 344px;
 }
 
 /* 背景框（整体） */
@@ -30,7 +30,7 @@
     top: 64px;
     left: 48px;
     position: absolute;
-    background: rgb(147, 39, 143) url(../../res/fakesuccess/greeting.png) no-repeat 30px 46px;
+    background: rgb(147, 39, 143) url(../../res/image/greeting1.png) no-repeat 30px 46px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,7 +83,7 @@
     margin-left: 16px;
     padding-left: 40px;
 
-    background: url(../../res/fakesuccess/account.gif) no-repeat 0 0;
+    background: url(../../res/image/account1.gif) no-repeat 0 0;
     background-position: 2px 4px;
     line-height: 1.1;
     font-size: 13px;
@@ -177,7 +177,7 @@
     margin: 24px 0 0 16px;
     padding: 0;
 
-    background: url(../../res/fakesuccess/usage.gif) repeat-y;
+    background: url(../../res/image/usage.gif) repeat-y;
 }
 
 /* 流量条刻度 */
@@ -282,20 +282,20 @@ li {
     margin: 16px;
     border: rgb(178, 170, 190) solid 1px;
 
-    background: rgb(192, 189, 204) url(../../res/fakesuccess/disconnect.png) no-repeat center 0;
+    background: rgb(192, 189, 204) url(../../res/image/disconnect.png) no-repeat center 0;
     overflow: hidden;
 }
 
 .disconnect:hover {
-    background: rgb(213, 209, 223) url(../../res/fakesuccess/disconnect.png) no-repeat center -47px;
+    background: rgb(213, 209, 223) url(../../res/image/disconnect.png) no-repeat center -47px;
 }
 
 .disconnect:active {
-    background: rgb(177, 170, 195) url(../../res/fakesuccess/disconnect.png) no-repeat center -94px;
+    background: rgb(177, 170, 195) url(../../res/image/disconnect.png) no-repeat center -94px;
 }
 
 .disconnect:disabled {
-    background: rgb(204, 204, 204) url(../../res/fakesuccess/disconnect.png) no-repeat center -141px;    
+    background: rgb(204, 204, 204) url(../../res/image/disconnect.png) no-repeat center -141px;    
 }
 
 /* 友链 */
@@ -354,7 +354,7 @@ li[name="linkr"] {
     text-decoration: none;
     font-size: 11px;
     font-family: Verdana, Geneva, sans-serif;
-    background: url(../../res/fakesuccess/popup_info.gif) no-repeat 2px 2px;
+    background: url(../../res/image/popup_info.gif) no-repeat 2px 2px;
 }
 
 .link_lib {
@@ -373,7 +373,7 @@ li[name="linkr"] {
     text-decoration: none;
     font-size: 11px;
     font-family: Verdana, Geneva, sans-serif;
-    background: url(../../res/fakesuccess/popup_lib.gif) no-repeat 2px 2px;
+    background: url(../../res/image/popup_lib.gif) no-repeat 2px 2px;
 }
 
 .link_learn {
@@ -391,7 +391,7 @@ li[name="linkr"] {
     text-decoration: none;
     font-size: 11px;
     font-family: Verdana, Geneva, sans-serif;
-    background: url(../../res/fakesuccess/popup_learn.gif) no-repeat 2px 2px;
+    background: url(../../res/image/popup_learn.gif) no-repeat 2px 2px;
 }
 
 .link_mail {
@@ -409,5 +409,5 @@ li[name="linkr"] {
     text-decoration: none;
     font-size: 11px;
     font-family: Verdana, Geneva, sans-serif;
-    background: url(../../res/fakesuccess/popup_mail.gif) no-repeat 2px 2px;
+    background: url(../../res/image/popup_mail.gif) no-repeat 2px 2px;
 }

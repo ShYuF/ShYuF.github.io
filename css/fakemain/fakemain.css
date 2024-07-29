@@ -1,6 +1,6 @@
 /* 页面设置 */
 .page_bg {
-    background: rgb(230, 230, 230) url(../../res/fakemain/background.png) repeat-x top;
+    background: rgb(230, 230, 230) url(../../res/image/background.png) repeat-x top;
     font-family: "Microsoft YaHei", "SimHei", "Apple LiGothic Medium";
 }
 
@@ -46,7 +46,7 @@
     float: left;
     clear: both;
 
-    background: url(../../res/fakemain/content_shadow.png) no-repeat 0 400px;
+    background: url(../../res/image/content_shadow.png) no-repeat 0 400px;
 }
 
 /* 登录背景框（整体） */
@@ -245,7 +245,7 @@ input {
     top: 40px;
     left: 150px;
 
-    background: url(../../res/fakemain/account.gif) no-repeat 0 0;
+    background: url(../../res/image/account.gif) no-repeat 0 0;
     font-size: 13px;
     color: rgb(140, 140, 140);
     padding-left: 40px;
@@ -304,19 +304,19 @@ input {
     margin-bottom: 10px;
 
     border: rgb(156, 178, 46) solid 1px;
-    background: rgb(192, 206, 85) url(../../res/fakemain/connect.png) no-repeat center 0;
+    background: rgb(192, 206, 85) url(../../res/image/connect.png) no-repeat center 0;
 }
 
 .login_button:hover {
-    background: rgb(210, 224, 66) url(../../res/fakemain/connect.png) no-repeat center -47px;
+    background: rgb(210, 224, 66) url(../../res/image/connect.png) no-repeat center -47px;
 }
 
 .login_button:active {
-    background: rgb(170, 195, 11) url(../../res/fakemain/connect.png) no-repeat center -94px;
+    background: rgb(170, 195, 11) url(../../res/image/connect.png) no-repeat center -94px;
 }
 
 .login_button:disabled {
-    background: rgb(203, 206, 182) url(../../res/fakemain/connect.png) no-repeat center -141px;
+    background: rgb(203, 206, 182) url(../../res/image/connect.png) no-repeat center -141px;
 }
 
 /* 登录按钮 */
